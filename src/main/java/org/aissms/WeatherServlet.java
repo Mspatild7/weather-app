@@ -33,7 +33,7 @@ public class WeatherServlet extends HttpServlet {
 		out.println(response);
 		out.flush();
 	}
-//get whether data --
+
 	private String getWeatherData(String city) throws IOException {
 		long start = System.nanoTime();
 		String coData = getCoordinates(city);
