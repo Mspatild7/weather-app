@@ -49,7 +49,7 @@ public class WeatherServlet extends HttpServlet {
 		System.out.println("Step2 Time:"+diff+"ms");
 		return result;
 	}
-
+		// get coordinates
 	private String getCoordinates (String city) throws IOException {
 		String url = String.format(step1, city, 1, apikey);
 		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).GET().build();
